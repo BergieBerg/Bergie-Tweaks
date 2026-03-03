@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "oldschool-enchanting",
+  "version": "${version}",
+  "name": "Oldschool-Enchanting",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/bergie-tweaks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.bergie.bergieTweaks.client.BergieTweaksClient"
+    ],
+    "main": [
+      "org.bergie.bergieTweaks.BergieTweaks"
+    ]
+  },
+  "mixins": [
+    "bergie-tweaks.mixins.json",
+    {
+      "config": "bergie-tweaks.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

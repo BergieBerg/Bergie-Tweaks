@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.bergie.bergieTweaks.Mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EnchantmentScreenHandlerMixin",
+    "ApplyBonusLootFunctionMixin",
+    "ItemEntityMixin",
+    "BlockMixin",
+    "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
